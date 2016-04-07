@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>messi</title>
+<link href="../main.css" rel="stylesheet" type="text/css"><!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; } /* this 1px negative margin can be placed on any of the columns in this layout with the same corrective effect. */
+ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it needs to correct extra whiltespace between the links */
+</style>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="" alt="Insert Logo Here" name="Insert_logo" width="20%" height="90" id="Insert_logo" style="background-color: #8090AB; display:block;" /></a> 
+    <!-- end .header --></div>
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="../Neymar/index.html">Lionel Messi</a></li>
+      <li><a href="../top5cars/index.html">Neymar</a></li>
+      <li>top 5 cars</li>
+    </ul>
+    <p> The above links demonstrate a basic navigational structure using an unordered list styled with CSS. Use this as a starting point and modify the properties to produce your own unique look. If yourequire flyout menus, create your own using a Spry menu, a menu widget from Adobe's Exchange or a variety of other javascript or CSS solutions.</p>
+    <p>If you would like the navigation along the top, simply move the ul.nav to the top of the page and recreate the styling.</p>
+    <!-- end .sidebar1 --></div>
+  <div class="content">
+    <h1><a href="http://www.biography.com/people/lionel-messi-555732/videos/lionel-messi-mini-biography-37875267659" target="_blank">Lionel Messi</a></h1>
+    <p>Messi is an excellent really good unique player. He is astoundingly creative. has amazing individual skill and is able to constantly put his rivals at unease. Leo Messi is an Argentine professional footballer who plays as a forward for Spanish club Barcelona and the Argentina national team Leo Messi simply the best footballer on the planet.<img src="http://wallpaperswa.com/thumbnails/detail/20140418/soccer%20lionel%20messi%20hdr%20photography%20fc%20barcelona_wallpaperswa.com_29.jpg" alt="5" width="404" height="242" class="irc_mi" style="margin-top: 97px;"></p>
+    <h2><a href="../top5cars/index.html">Neymar</a></h2>
+    <pre data-placeholder="Translation" id="tw-target-text" data-fulltext="" dir="ltr"> He was born on February 5, 1992, in Mogi das Cruzes, Sao Paulo
+ Brazil The son of a former professional soccer player
+ Neymar followed in his father's footsteps by playing street 
+ games and futsal,</pre>
+    <p><img src="http://newsfirst.lk/english/wp-content/uploads/2014/07/Brazil-Neymar.jpg" alt="" width="600" height="571" class="irc_mi" style="margin-top: 0px;"></p>
+    <h3>&nbsp;</h3>
+    <h4>top 5 cars</h4>
+    <p>By nature, the background color on any div will only show for the length of the content. This means if you're using a background color or border to create the look of a side column, it won't extend all the way to the footer but will stop when the content ends. If the .content div will always contain more content, you can place a border on the .content div to divide it from the column.</p>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>This .footer contains the declaration position:relative; to give Internet Explorer 6 hasLayout for the .footer and cause it to clear correctly. If you're not required to support IE6, you may remove it.</p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>
+
+
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+.unit {
+  height: 100px;
+  width: 30%;
+  margin: 1.5%;
+  background: #cccccc;
+  float: left; }
+
+.page-content {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.15s ease-out 0;
+  -moz-transition: all 0.15s ease-out 0;
+  transition: all 0.15s ease-out 0;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: right center;
+  -moz-transform-origin: right center;
+  -ms-transform-origin: right center;
+  -o-transform-origin: right center;
+  transform-origin: right center;
+  height: 100%;
+  overflow: scroll;
+  background: #eeeeee; }
+
+.toggle {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  -webkit-transition: all 0.15s ease-out 0;
+  -moz-transition: all 0.15s ease-out 0;
+  transition: all 0.15s ease-out 0;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  cursor: pointer; }
+
+.sidebar {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 120px;
+  padding: 30px;
+  background: #333333;
+  z-index: 0; }
+  .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .sidebar li {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 16px;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer; }
+    .sidebar li:hover {
+      color: white; }
+
+#sidebartoggler {
+  display: none; }
+  #sidebartoggler:checked + .page-wrap .toggle {
+    left: 200px; }
+  #sidebartoggler:checked + .page-wrap .page-content {
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    transform: scale(0.7);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); }
